@@ -6,21 +6,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function digitar() {
         if (!deletando) {
-            elemento.textContent = textoCompleto.slice(0, indexLetra++);
+            elemento.innerHTML = textoCompleto.slice(0, indexLetra++) + "<span class='cursor'>|</span>";
             if (indexLetra > textoCompleto.length) {
                 deletando = true;
                 setTimeout(digitar, 1500);
                 return;
             }
         } else {
-            elemento.textContent = textoCompleto.slice(0, indexLetra--);
+            elemento.innerHTML = textoCompleto.slice(0, indexLetra--) + "<span class='cursor'>|</span>";
             if (indexLetra < 0) {
                 deletando = false;
                 setTimeout(() => {
-                    elemento.textContent = "";
+                    elemento.innerHTML = "<span class='cursor'>|</span>";
                     indexLetra = 0;
-                    digitar(); 
-                }, 500); 
+                    digitar();
+                }, 500);
                 return;
             }
         }
