@@ -35,14 +35,14 @@
 
 .hero h2 {
     font-size: 19px;
-    color: #8D5AF7;
+    color: #025A4E;
     margin-bottom: 1rem;
     font-family: 'Sora', sans-serif;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #025A4E;
+    color: #4C6763;
     margin-bottom: 2rem;
     font-family: 'Sora', sans-serif;
 }
@@ -100,31 +100,3 @@ button img {
     justify-content: center;
     align-items: center;
 }
-
-
-@media screen and (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .column-left {
-        align-items: center;
-        margin-top: 0;
-    }
-
-    .column-right {
-        margin-top: 1rem;
-    }
-
-    .hero-image img {
-        max-width: 200px; 
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .column-left h1 {
-        font-size: 2rem;
-    }
-}
-
