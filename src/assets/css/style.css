@@ -112,3 +112,19 @@ button img {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+/* Sobre mim */
+.sobre {
+    background: #EDE7DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    color: #025A4E;
+    margin-bottom: 20px;
+}
