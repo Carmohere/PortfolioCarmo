@@ -58,7 +58,7 @@
 
 .column-left h1 {
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .column-left p {
@@ -113,18 +113,355 @@ button img {
     100% { opacity: 1; }
 }
 
-/* Sobre mim */
 .sobre {
-    background: #EDE7DE;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    text-align: left;
+    padding: 80px 40px;
+    background: #EDE7DE;
+    color: #333;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 25%;
 }
 
-.sobre h2 {
-    font-size: 2rem;
-    color: #025A4E;
+.conteudo {
+    max-width: 500px;
+}
+
+.conteudo h1 {
+    font-size: 2.5rem;
+    color: #111;
+}
+
+.conteudo h2 {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.atualmente {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.atualmente h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.atualmente ul {
+    list-style: none;
+    padding: 0;
+}
+
+.atualmente li {
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.contato a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #666;
+}
+
+.botao-cv {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.interesses {
+    background: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.interesses h3 {
+    font-size: 1.2rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #E0E0E0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.container{
+	width: 100%;
+	padding: 35px 10%;
+}
+.container{
+	padding-right: calc(10% - 30px);
+}
+main.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+.col header.title{
+	font-family: helvetica;
+	color: #11a372;
+	padding: 0px 0px 20px 30px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: #11a372;
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+	color: #11a372;
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: #444;
+}
+.box p{
+	line-height: 1.2;
+	color: #666;
+	font-size: 17px;
+}
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
+}
+
+.habilidades {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f5f5f5;
+}
+
+.habilidades h2 {
+    font-size: 2em;
     margin-bottom: 20px;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projetos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projeto {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+}
+
+.projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.tags span {
+    background: #eee;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.footer {
+    background: linear-gradient(to top, #000, #111); /* Fundo escuro com degradê */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.btn:hover {
+    background: #ddd;
 }
